@@ -1,0 +1,100 @@
+:root {
+    /* Paleta Pink Pastel */
+    --c-correto: #ffb7ce; /* Rosa chiclete claro */
+    --c-tem: #ffd1dc;     /* Rosa pastel */
+    --c-erro: #f0f0f0;    /* Branco acinzentado suave */
+    --bg: #fff5f8;        /* Fundo rosa quase branco */
+    --texto: #d6809a;     /* Texto rosa escuro para contraste */
+    --borda: #ffdae3;
+}
+
+body {
+    background: var(--bg);
+    color: var(--texto);
+    font-family: 'Quicksand', 'Segoe UI', sans-serif; /* Fonte mais arredondada */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+}
+
+/* Telas */
+#tela-inicio {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#tela-jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-idioma {
+    background: #ff85a2; /* Rosa vibrante */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 25px; /* Botões bem redondinhos */
+    font-weight: bold;
+    box-shadow: 0 4px 0 #e6738f; /* Efeito de profundidade fofo */
+    transition: transform 0.1s;
+}
+
+.btn-idioma:hover {
+    background: #ff7092;
+    transform: translateY(2px);
+}
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: white;
+    color: #ff85a2;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid var(--borda);
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.tile {
+    width: 55px;
+    height: 55px;
+    border: 2px solid var(--borda);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px; /* Cantos levemente arredondados nas peças */
+    transition: all 0.2s;
+    color: var(--texto);
+}
+
+.instrucoes {
+    max-width: 350px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #b3a2a7;
+    margin-bottom: 20px;
+}
